@@ -86,10 +86,10 @@ $(document).ready(function(){
 	
 
 
-	var isActive = '<div id="pluginActive"><label class="radipasif"><input type="radio" name="aktifmi" id="pasifinki" value="0" checked>FBR <span>Pasif</span></label><label class="radiaktif"><input type="radio" name="aktifmi" value="1">FBR <span>Aktif</span></label></div>';
+	var isActive = '<div id="pluginActive"><label class="radipasif"><input type="radio" name="aktifmi" id="pasifinki" value="0" checked>FBR <span>Inactive</span></label><label class="radiaktif"><input type="radio" name="aktifmi" value="1">FBR <span>Active</span></label></div>';
 	$('body').prepend(isActive);
 
-	var fbrstoreHtml = '<div id="fbrstore_2" style="display:none;"><button class="fbrbtn nolowestauto">Lowest Olmayanlar(Oto. Gezin)</button><button class="fbrbtn nolowest">Lowest Olmayanlar</button><button class="fbrbtn nosalesrank">Sales Rank\'i Olmayanlar</button><button class="fbrbtn nolowestsalesrank">Lowest Olmayan ve Sales Rank\'i Olmayanlar</button><button class="fbrbtn nolowestwithoutbuybox">No Lowest (without BuyBox)</button></div>';
+	var fbrstoreHtml = '<div id="fbrstore_2" style="display:none;"><h4>Select Products by <span>FBR</span> Filter:</h4><button class="fbrbtn nolowestauto">Non-Lowest (Auto Nav.)</button><button class="fbrbtn nolowest">Not \'Lowest\'</button><button class="fbrbtn nosalesrank">Not Exist: \'Sales Rank\'</button><button class="fbrbtn nolowestsalesrank">Not \'Lowest\' & Not Exist: \'Sales Rank\'</button><button class="fbrbtn nolowestwithoutbuybox">Not \'Lowest\' (without having \'BuyBox\')</button></div>';
 	$('#myitable .mt-header .mt-header-filters').before(fbrstoreHtml);
 
 
