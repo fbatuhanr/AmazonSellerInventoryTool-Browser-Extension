@@ -1,0 +1,47 @@
+#fbrstore_2 {    
+	display: inline-flex;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+}
+#fbrstore_2-floating {
+	display: none;
+}
+
+#fbrstore_2 button.fbrbtn {
+    background: #5a6169;
+    font-size: 12px;
+    display: block;
+    float:  left;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 3px;
+}
+
+
+#pluginActive {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 100;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 12px;
+    margin: 0 20px 0 0;
+}
+#pluginActive .radipasif, #pluginActive .radiaktif {
+    transform: scale(1.3, 1.3);
+    margin:0;
+}
+#pluginActive .radipasif span, #pluginActive .radiaktif span {
+    font-weight: bold;
+}
+#pluginActive .radipasif span {
+    color: #E91E63;
+}
+#pluginActive .radiaktif span {
+    color: #4CAF50;
+}

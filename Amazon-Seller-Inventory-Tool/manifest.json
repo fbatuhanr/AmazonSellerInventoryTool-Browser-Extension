@@ -1,0 +1,36 @@
+{
+	"manifest_version": 2,
+	"name": "FBR Store Inventory - Amazon",
+	"version": "1.0",
+	"description": "Amazon SellerCentral Inventory | FBR Store | Developed by Batuhan OZTURK",
+	"icons": {
+		"200": "resources/icon/amazonFBR.png",		
+		"128": "resources/icon/amazonFBR.png",
+		"64": "resources/icon/amazonFBR.png"
+	},
+
+	"browser_action": {
+		"default_icon": "resources/icon/amazonFBR.png",
+		"default_popup": "resources/popup.html",
+		"default_title": "FBR Store"
+	},
+
+	"background": {
+		"scripts": ["resources/eventPage.js"],
+		"persistent": false
+	},
+
+	"content_scripts": [{
+		"matches": ["https://sellercentral.amazon.com/inventory*", "https://sellercentral.amazon.co.uk/inventory*", "https://sellercentral.amazon.ae/inventory*", "https://sellercentral.amazon.sg/inventory*"],
+		"js": ["resources/content.js", "resources/jquery-3.4.1.min.js", "resources/script.js"],
+		"css": ["resources/content.css"]
+	}],
+
+	"permissions": [
+		"tabs",
+		"https://sellercentral.amazon.com/inventory*",
+		"https://sellercentral.amazon.co.uk/inventory*",
+		"https://sellercentral.amazon.ae/inventory*",
+		"https://sellercentral.amazon.sg/inventory*"
+	]
+}
